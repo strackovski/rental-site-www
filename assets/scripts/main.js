@@ -10,6 +10,38 @@ $(document).ready(function () {
         return check;
     };
 
+    $('#fs_modal').on('shown.bs.modal', function(){
+        setTimeout(function(){
+            $('.loader').hide();
+            $('.row.hidden').removeClass('hidden').addClass('shown');
+
+            $('.no-show').each(function(i, x){
+               console.log(i)
+               console.log(x)
+
+                $(x).animate({
+                    opacity: 1
+                }, (i+1) * 400, function() {
+                });
+
+                //$(x).css('opacity', 1);
+            });
+        }, 1000);
+    });
+
+    $('#fs_modal').on('hidden.bs.modal', function(){
+        setTimeout(function(){
+            $('.loader').show();
+            $('.row.shown').addClass('hidden').removeClass('shown');
+            $('.no-show').css('opacity', 0);
+        }, 1000);
+    });
+
+    $('#search_form .btn-primary').on('click', function(e){
+        e.preventDefault();
+        $('#fs_modal').modal('show');
+    });
+
     if (mobilecheck()) {
         $('body').addClass('is_mobile');
     }

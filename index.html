@@ -61,7 +61,6 @@
 <div class="shadow"></div>
 <div class="wrapper">
     <div class="hero">
-
         <div class="slides">
             <ul>
                 <li class="slide slide1"></li>
@@ -90,7 +89,7 @@
                     <div class="inner-col">
                         <h1><span>New Apartments</span> for rent</h1>
                         <div class="row">
-                            <form action="">
+                            <form id="search_form" action="">
                                 <div class="col-xs-8">
                                     <input class="form-control" type="text" placeholder="City Area" />
                                 </div>
@@ -322,5 +321,181 @@
         </div>
     </section>
 </div>
+
+<div id="fs_modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="loader"><img src="assets/images/ring.gif" alt="LOADING"/></div>
+                <div class="container-fluid odd">
+                    <div class="row no-show hidden result-header" id="header-1" data-panel="panel-1">
+                        <div class="col-xs-3 col-sm-2 media col">
+                            <div>
+                                <img src="assets/images/apartment.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-7 text col">
+                            <div>
+                                <h3>Result Title</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                                <div class="features">
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 price col">
+                            <div>
+                                <p class="price_tag">200,00 &euro;</p>
+                                <p class="price_type">per month w/o utilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row no-show hidden result-header" id="header-2" data-panel="panel-2">
+                        <div class="col-xs-3 col-sm-2 media col">
+                            <div>
+                                <img src="assets/images/apartment3.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-7 text col">
+                            <div>
+                                <h3>Result Title</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                                <div class="features">
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 price col">
+                            <div>
+                                <p class="price_tag">200,00 &euro;</p>
+                                <p class="price_type">per month w/o utilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid odd">
+                    <div class="row no-show hidden result-header" id="header-3" data-panel="panel-3">
+                        <div class="col-xs-3 col-sm-2 media col">
+                            <div>
+                                <img src="assets/images/apartment3.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-7 text col">
+                            <div>
+                                <h3>Result Title</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                                <div class="features">
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 price col">
+                            <div>
+                                <p class="price_tag">200,00 &euro;</p>
+                                <p class="price_type">per month w/o utilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row no-show hidden result-header" id="header-4" data-panel="panel-4">
+                        <div class="col-xs-3 col-sm-2 media col">
+                            <div>
+                                <img src="assets/images/apartment3.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-7 text col">
+                            <div>
+                                <h3>Result Title</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                                <div class="features">
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 price col">
+                            <div>
+                                <p class="price_tag">200,00 &euro;</p>
+                                <p class="price_type">per month w/o utilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid odd">
+                    <div class="row no-show hidden result-header" id="header-5" data-panel="panel-5">
+                        <div class="col-xs-3 col-sm-2 media col">
+                            <div>
+                                <img src="assets/images/apartment3.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-7 text col">
+                            <div>
+                                <h3>Result Title</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                                <div class="features">
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 price col">
+                            <div>
+                                <p class="price_tag">200,00 &euro;</p>
+                                <p class="price_type">per month w/o utilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row no-show hidden result-header" id="header-6" data-panel="panel-6">
+                        <div class="col-xs-3 col-sm-2 media col">
+                            <div>
+                                <img src="assets/images/apartment3.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-7 text col">
+                            <div>
+                                <h3>Result Title</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                                <div class="features">
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                    <i class="fa fa-support"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 price col">
+                            <div>
+                                <p class="price_tag">200,00 &euro;</p>
+                                <p class="price_type">per month w/o utilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 </body>
 </html>

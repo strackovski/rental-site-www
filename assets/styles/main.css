@@ -98,8 +98,8 @@ body {
 }
 
 .hero-content {
-    height: 550px;
-    line-height: 550px;
+    height: 500px;
+    line-height: 500px;
 }
 
 .hero-col span {
@@ -323,13 +323,16 @@ body {
 
 .main-header {
     background: #ffffff;
+    width: 80%;
+    width: 800px;
     width: 100%;
     box-sizing: border-box;
-    border: 15px solid rgba(255, 255, 255, 0.5);
+    border: 8px solid rgba(255, 255, 255, 0.5);
     background-clip: padding-box;
+    margin: 0 auto;
     margin-top: 20px;
     position: relative;
-    height: 86px;
+    height: 70px;
 }
 
 @media screen and (max-width: 800px) {
@@ -498,7 +501,10 @@ section {
 }
 
 .section-4 {
-    background: #c7c8ca;
+    background: #c7c8ca url('../images/bg-footer.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     padding: 54px 80px;
     padding-bottom: 0;
 }
@@ -954,4 +960,212 @@ section {
     height: 15px;
     margin-top: -3px;
     margin-left: 5px;
+}
+
+.modal-dialog {
+    width: 90%;
+    background: #fff;
+    padding: 0;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-header {
+    background: #000;
+    color: #ffe71a;
+}
+
+.modal-header .close {
+    color: #ffe71a;
+    opacity: 1;
+}
+
+.modal-content {
+    height: 100%;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-body .container-fluid {
+    background: #fff;
+}
+
+.modal-body .container-fluid.odd {
+    background: #f8f8f8;
+}
+
+.modal-body .col {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.modal-body .open .col {
+    border-bottom: none;
+}
+
+.modal-body .col > div {
+    padding: 15px;
+}
+
+.modal-body .media > div {
+    /*background: blue;*/
+    padding: 15px 0;
+}
+
+.modal-body .media {
+    border-right: 1px solid #dfdfdf;
+}
+
+.modal-body .price,
+.modal-body .result-panel .right {
+    border-left: 1px solid #dfdfdf;
+}
+
+.modal-body .text h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.modal-body .text p {
+    line-height: 1.1em;
+    font-size: 1em;
+}
+
+.modal-body .media img {
+    min-width: 60px;
+    width: 100%;
+
+}
+
+.price_tag, .price_type, .features {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: .9em;
+}
+
+.price_tag {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price_type {
+    font-size: .9em;
+    font-weight: normal;
+}
+
+.features {
+    position: absolute;
+    top: 15px;
+    right: 34px;
+}
+
+.features i {
+    margin: 0 5px;
+}
+
+.nd {
+    display: none !important;
+}
+
+.no-show {
+    opacity: 0;
+}
+
+.container-fluid .row {
+    display: table;
+
+}
+.container-fluid .row > * {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container-fluid .row.result-panel > * {
+    vertical-align: top;
+}
+
+ul.opt {
+    width: 50%;
+}
+
+.loader {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loader img {
+    background: #fff;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 255, 255, 0.9);
+    width: 120px;
+}
+
+@media screen and (max-width: 1060px) {
+    .modal-body .text h3 {
+        font-size: 1.2em;
+    }
+
+    .modal-body .text p {
+        line-height: 1.1em;
+        font-size: .9em;
+    }
+
+    .price_tag {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .price_type {
+        font-size: .8em;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .modal-body .text h3 {
+        font-size: 1em;
+    }
+
+    .modal-body .text p {
+        line-height: 1.1em;
+        font-size: .9em;
+    }
+
+    .price_tag {
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .price_type {
+        font-size: .8em;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .features {
+        position: inherit;
+        top: 0;
+        right: 0;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+
+    .features i:first-child {
+        margin-left: 0;
+    }
 }
