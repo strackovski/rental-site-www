@@ -10,26 +10,22 @@ $(document).ready(function () {
         return check;
     };
 
-    $('#fs_modal').on('shown.bs.modal', function(){
+    var fsModal = $('#fs_modal');
+    var searchForm = $('#search_form');
+
+    fsModal.on('shown.bs.modal', function(){
         setTimeout(function(){
             $('.loader').hide();
             $('.row.hidden').removeClass('hidden').addClass('shown');
-
             $('.no-show').each(function(i, x){
-               console.log(i)
-               console.log(x)
-
                 $(x).animate({
                     opacity: 1
-                }, (i+1) * 400, function() {
-                });
-
-                //$(x).css('opacity', 1);
+                }, (i+1) * 400, function() {});
             });
         }, 1000);
     });
 
-    $('#fs_modal').on('hidden.bs.modal', function(){
+    fsModal.on('hidden.bs.modal', function(){
         setTimeout(function(){
             $('.loader').show();
             $('.row.shown').addClass('hidden').removeClass('shown');
@@ -37,9 +33,9 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    $('#search_form .btn-primary').on('click', function(e){
+    searchForm.find('.btn-primary').on('click', function(e){
         e.preventDefault();
-        $('#fs_modal').modal('show');
+        fsModal.modal('show');
     });
 
     if (mobilecheck()) {
@@ -69,12 +65,10 @@ $(document).ready(function () {
         slider.animate({left: "+=" + (-100 * direction) + '%'}, 400, function(){
             current += direction;
             cycle = !!(current === 0 || current > len);
-
             if(cycle) {
                 current = (current === 0) ? len : 1;
                 slider.css({left: -100 * current + '%'});
             }
         });
     }, 5000);
-
 });
