@@ -2,6 +2,8 @@ Rental/Booking Web Site Template
 =========
 Modern web site design for rental/booking type of sites. Demo site is implemented as an apartment rental page.
 
+![Screens](http://www.envee.eu/projects/feats/re-feat-git.gif)
+
 Features
 ----
    * Attractive landing page with full-height hero for CTA content
